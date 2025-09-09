@@ -1,0 +1,55 @@
+/* General layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #004080;
+  background-color: #e0e0ff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: red; /* default */
+}
+nav a:hover {
+  color: yellow;
+}
+nav a:visited {
+  color: green;
+}
+
+/* Div & Span Styling */
+.info-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fffaf0;
+  margin: 15px 0;
+}
+.highlight {
+  color: darkred;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
