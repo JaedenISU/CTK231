@@ -1,0 +1,71 @@
+body {
+  font-family: Helvetica; 
+  margin: 20px;
+  background-image: url("ISU.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: orange;
+  font-style: italic;
+  font-weight: normal; 
+}
+
+
+.center-text {
+  text-align: center;
+}
+.justify-text {
+  text-align: justify;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: red; 
+}
+nav a:hover {
+  color: yellow;
+}
+nav a:visited {
+  color: green;
+}
+
+
+.info-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fffaf0;
+  margin: 15px 0;
+}
+.highlight {
+  color: darkred;
+  font-weight: bold;
+}
+
+
+img {
+  border: 10px solid black; 
+  padding: 10px;           
+  background-color: yellow;
+}
+
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
