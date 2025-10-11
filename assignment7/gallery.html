@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    
+    main.gallerypage {
+      display: block;
+      padding: 20px;
+    }
+
+    .gallery-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 4px;
+    }
+
+    .card {
+      width: 32%;
+      text-align: left;
+      border-top: 2px solid #003366;
+      padding-top: 10px;
+    }
+
+    .card h2 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      color: #003366;
+      margin: 0 0 10px 0;
+      padding-bottom: 6px;
+      border-bottom: none; 
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #003366;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 0 0 12px 0;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="index.html">Make this h1 a link to the welcome page</a></h1>
+      <nav>
+        <a href="index.html">Welcome Page</a>
+        <a href="about.html">About This Site</a>
+        <a href="gallery.html" class="active">Gallery</a>
+      </nav>
+    </header>
+
+    <main class="gallerypage">
+      
+
+      <section class="gallery-grid">
+        <article class="card">
+          <h2>Carmy (h2)</h2>
+          <img src="carmy.jpg" alt="Carmy">
+          <p><a href="#">This is a link.</a> Aliquam nec suscipit
+nulla. Quisque vitae faucibus nisl. Ut eleifend, risus vitae egestas vulputate, urna enim volutpat risus, vel ultricies ipsum urna auctor arcu. Mauris nec magna quis elit ultricies tristique. Cras vel felis sed libero pellentesque ornare. Mauris sit amet arcu nulla, nec tempor nisi. Aliquam erat volutpat. Vivamus eu metus in sem egestas imperdiet.</p>
+        </article>
+
+        <article class="card">
+          <h2>Sydney (h2)</h2>
+          <img src="sydney.jpg" alt="Sydney">
+          <p><a href="#">This is a link.</a> Aliquam nec suscipit
+nulla. Quisque vitae faucibus nisl. Ut eleifend, risus vitae egestas vulputate, urna enim volutpat risus, vel ultricies ipsum urna auctor arcu. Mauris nec magna quis elit ultricies tristique. Cras vel felis sed libero pellentesque ornare. Mauris sit amet arcu nulla, nec tempor nisi. Aliquam erat volutpat. Vivamus eu metus in sem egestas imperdiet.</p>
+        </article>
+
+        <article class="card">
+          <h2>Richie (h2)</h2>
+          <img src="richie.jpg" alt="Richie">
+          <p><a href="#">This is a link.</a> Aliquam nec suscipit
+nulla. Quisque vitae faucibus nisl. Ut eleifend, risus vitae egestas vulputate, urna enim volutpat risus, vel ultricies ipsum urna auctor arcu. Mauris nec magna quis elit ultricies tristique. Cras vel felis sed libero pellentesque ornare. Mauris sit amet arcu nulla, nec tempor nisi. Aliquam erat volutpat. Vivamus eu metus in sem egestas imperdiet.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://illinoisstate.edu" target="_blank">
+        <img src="wordmark_isu.png" alt="Illinois State University logo">
+      </a>
+    </footer>
+  </div>
+</body>
+</html>
