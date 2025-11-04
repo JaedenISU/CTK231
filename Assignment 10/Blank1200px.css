@@ -1,0 +1,128 @@
+body {
+  background-color: #3a3a3a;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+header {
+  grid-column: span 12;
+  background-color: #8C0D8E;
+  color: #FFDEBF;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+nav {
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+nav a {
+  background-color: #8C0D8E;
+  color: #FFDEBF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 60px;
+  font-size: 22px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background-color: #6a0b6b;
+}
+
+#about {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#mainimg {
+  width: 100%;
+  border-radius: 4px;
+}
+
+#abouttext h2 {
+  background-color: #8C0D8E;
+  color: #FFDEBF;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+#abouttext p {
+  line-height: 1.5;
+  color: #222;
+  font-size: 16px;
+}
+
+main {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "project1 logo project2"
+    ". project3 .";
+  text-align: center;
+  gap: 20px;
+  margin-top: 40px;
+  text-decoration: underline 3px #FFDEBF;
+}
+
+#project1 { grid-area: project1; }
+#project2 { grid-area: project2; }
+#logo { grid-area: logo; }
+#project3 { grid-area: project3; }
+
+.project h3 {
+  text-transform: uppercase;
+  color: #FFDEBF;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+#logo img {
+  width: 250px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  grid-column: span 12;
+  background-color: #8C0D8E;
+  color: #FFDEBF;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  margin-top: 40px;
+}
