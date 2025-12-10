@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jaeden Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Figtree:wght@300..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/carousel.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/carousel/carousel.arrows.css"/>
+
+  <link rel="stylesheet" href="Blank1200px.css" type="text/css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>JAEDEN WEBSITE</h1>
+    </header>
+
+    <nav>
+      <a href="contact.html">CONTACT</a>
+      <a href="video.html">VIDEO</a>
+      <a href="audio.html">AUDIO</a>
+    </nav>
+
+    <div id="about">
+      <img id="mainimg" src="Jaeden.jpg" alt="Jaeden photo">
+      <div id="abouttext">
+        <h2>ABOUT ME</h2>
+        <p>Hi, I’m Jaeden a Creative Technologies student at Illinois State University majoring in Audio and Music Production. I’m a producer and artist who loves creating music and art, especially across alternative hip-hop, neo-soul, jazz, and house.</p>
+      </div>
+    </div>
+
+    <main>
+      <section class="project" id="project1">
+        <h3>PROJECT 1</h3>
+
+        <a data-fancybox="gallery" href="kashii.jpg">
+          <img src="kashii.jpg" alt="project1">
+        </a>
+
+        <iframe style="border:0;width:100%;height:42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2035766725/size=small/bgcol=333333/linkcol=fe7eaf/transparent=true/" seamless></iframe>
+      </section>
+
+      <div id="logo">
+        <img src="Logo.png" alt="Logo">
+      </div>
+
+      <section class="project" id="project2">
+        <h3>PROJECT 2</h3>
+
+        <a data-fancybox="gallery" href="Hardy2.jpeg">
+          <img src="Hardy2.jpeg" alt="project2">
+        </a>
+
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1999571799">
+        </iframe>
+      </section>
+
+      <section id="project3" class="project">
+        <h3>PROJECT 3</h3>
+
+        <a data-fancybox="gallery" href="Hardy.jpeg">
+          <img src="Hardy.jpeg" alt="project3">
+        </a>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zR9fdQaDXz4?si=fxjJzwu0GFtUGcpv" allowfullscreen></iframe>
+
+        <h3 style="margin-top:20px;">PHOTO GALLERY</h3>
+
+        <div class="carousel-container">
+          <div class="f-carousel" id="myCarousel">
+            <div class="f-carousel__slide">
+              <a data-fancybox="gallery2" href="Jaeden.jpg">
+                <img src="Jaeden.jpg">
+              </a>
+            </div>
+
+            <div class="f-carousel__slide">
+              <a data-fancybox="gallery2" href="kashii.jpg">
+                <img src="kashii.jpg">
+              </a>
+            </div>
+
+            <div class="f-carousel__slide">
+              <a data-fancybox="gallery2" href="Hardy.jpeg">
+                <img src="Hardy.jpeg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>COPYRIGHT ILLINOIS STATE UNIVERSITY</p>
+      <a class="bi bi-instagram" href="https://www.instagram.com/ja3_hardy/?hl=en" target="_blank"></a>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/carousel/carousel.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/carousel/carousel.arrows.umd.js"></script>
+
+  <script>
+    Fancybox.bind("[data-fancybox]", {});
+
+    new Carousel(
+      document.querySelector("#myCarousel"),
+      { infinite: true },
+      { Arrows }
+    );
+  </script>
+
+</body>
+</html>
