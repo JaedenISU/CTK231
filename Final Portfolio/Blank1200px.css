@@ -1,0 +1,144 @@
+body {
+  background-color: #3a3a3a;
+  margin: 0;
+  font-family: "Asimovian", sans-serif;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+header {
+  grid-column: span 12;
+  background-color: #8C0D8E;
+  color: #FFDEBF;
+  padding: 10px 20px;
+  font-size: 28px;
+  border-radius: 12px;
+  border: 5px solid black;
+  box-shadow: 10px 10px 10px #999;
+  text-shadow: 3px 3px 3px #000;
+}
+
+
+nav {
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  background-color: #8C0D8E;
+  color: #FFDEBF;
+  padding: 15px 60px;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #6a0b6b;
+}
+
+
+#about {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+#mainimg {
+  width: 100%;
+  border-radius: 24px;
+}
+
+#abouttext h2 {
+  background-color: #8C0D8E;
+  color: #FFDEBF;
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+
+
+main {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "project1 logo project2"
+    ". project3 .";
+  gap: 20px;
+  text-align: center;
+}
+
+#project1 { grid-area: project1; }
+#project2 { grid-area: project2; }
+#project3 { grid-area: project3; }
+
+.project img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+
+#logo img {
+  width: 250px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#myCarousel {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+#myCarousel img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+footer {
+  grid-column: span 12;
+  background-color: #8C0D8E;
+  color: #FFDEBF;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 10px #999;
+  text-shadow: 3px 3px 3px #000;
+}
+
+footer a {
+  font-size: 30px;
+  color: palevioletred;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  font-size: 40px;
+  color: pink;
+}
